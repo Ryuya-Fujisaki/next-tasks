@@ -1,18 +1,16 @@
-import SideMenu from "@/components/SideMenu/SideMenu";
+import SideMenu from '@/components/SideMenu/SideMenu';
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
-const MainLayout =
-    ({
-        children,
-    }: Readonly<{
-        children: React.ReactNode;
-    }>) => {
-        return (
-            <div className="flex h-screen">
-                <SideMenu />
-                <main className='bg-slate-50 flex-1 overflow-auto'>{children}</main>
-            </div>
-        );
-    };
+const MainLayout = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
+  return (
+    <div className="flex h-screen">
+      <SideMenu />
+      <main className="bg-slate-50 flex-1 overflow-auto">{children}</main>
+    </div>
+  );
+};
 
-export default MainLayout
+export default MainLayout;
