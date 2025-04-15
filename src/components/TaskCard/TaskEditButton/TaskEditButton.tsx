@@ -1,17 +1,16 @@
-import Link from "next/link";
-import { FaPen } from "react-icons/fa";
+import Link from 'next/link';
+import { FaPen } from 'react-icons/fa';
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
 interface TaskEditButtonProps {
-    id: string;
+  id: string;
 }
 
 const TaskEditButton: React.FC<TaskEditButtonProps> = ({ id }) => {
-    return (
-        <Link href={`/edit/${id}`}>
-            <FaPen className='hover:text-gray-700 text-lg cursor-pointer' />
-        </Link>
-    )
+  return (
+    <Link href={`/edit/${id}`}>
+      <FaPen className='hover:text-gray-700 text-lg cursor-pointer'/>
+    </Link>
+  )
 }
 
 export default TaskEditButton
