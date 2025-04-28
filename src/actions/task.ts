@@ -20,6 +20,7 @@ export const createTask = async (state: FormState, formData: FormData) => {
         await connectDb()
         await TaskModel.create(newTask)
     } catch (error) {
+        console.error('タスク作成エラー:', error); // ← ここ追加！！
         state.error = 'タスクの作成に失敗しました';
         return state;
     }
